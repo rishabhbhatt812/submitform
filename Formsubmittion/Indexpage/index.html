@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheet/stylesheet.css">
+  <script src="https://kit.fontawesome.com/dd1a5ce34a.js" crossorigin="anonymous"></script>
+  <title>From Submission</title>
+</head>
+<body>
+  <div id="page" class="site">
+    <div class="container">
+      <div class="form-box">
+        <div class="progress">
+         <div class="logo"><span>.Form</span>Submit</div>
+          <ul class="progress-steps">
+            <li class="step active">
+              <span>1</span>
+              <p>Personal </p>
+            </li >
+            <li class="step ">
+              <span>2</span>
+              <p>Education</p>
+            </li>
+            <li class="step ">
+              <span>3</span>
+              <p>Contact</p>
+            </li>
+          </ul>
+
+        </div>
+      
+        <form action="" class="form correct ">
+      
+          <div class="from-one form-step active">
+            <div class="bg-svg"><i class="fa-solid fa-user fa-3x"></i></div>
+             <h3>Persnol Information</h3>
+             <p>Fill your  Information here</p>
+             <div>
+              <label>First Name</label>
+              <input type="text" placeholder="Your Firstname" id="name" class=" " onkeyup="validateName()" onkeydown="display()">
+            <span id="name-error"></span></div>
+            <div>
+              <label>Last Name</label>
+              <input type="text" placeholder="Your LastName" id="lastname" class=" " onkeyup="validateLastName()">
+              <span id="last-error"></span>
+            </div>
+              <div>
+               <label>Gender</label><div class="gender" id="gender" >
+                <input type="radio" name="Gender" value="male" onkeyup="validategender()">Male</input>
+                <input type="radio" name="Gender" value="female" onkeyup="validategender()">Female</input>
+                <span id="gender-error"></span>
+              </div>
+              </div>
+              <div class="birth">
+              <label>Date of Birth</label>
+                <input type="date" patter="[0-9]*" name="day" id="dob" value="" class=" " onclick="validateDOB()">
+               <span id="DOB-error">
+               </span>
+              </div>
+             </div>
+
+            <div class="form-two form-step">
+              <div class="bg-svg"><i  class="fa-solid fa-school fa-3x"></i></div>
+              <h3>Education </h3>
+              <p>Fill your Education Details  <i class=" fa-solid fa-plus add" onclick="addedu()"></i> </p>
+              <div>
+                <section class="education">
+                <label>Degree/Cource</label>
+                <select name="degree" id="degree" class=" " onclick="validdegree()" >
+                  <option value=" "></option>
+                  <option value="1">Master</option>
+                  <option value="2">Batchlor</option>
+                  <option value="3">12th</option>
+                </select>
+                <span id="degree-error"></span>
+                </div>
+                <div>
+                <label>University Name</label>
+                <input type="text" placeholder="Your University Name" id="uniname" class="add "  onkeyup="validateuniname()" >
+              <span id="University-error"></span></div>
+               <div>
+                <label>Score</label>
+                <input type="number" placeholder="Your Score in %" id="Score" onkeyup="validateScore()">
+                <span id="Score-error"></span>
+               </div>
+               <div>
+                <label>MarkSheet</label>
+                <input class="MarkSheet" type="file" id="mark" onkeyup="validatemark()" >
+                <span id="MarkSheet-error"></span>
+
+               </div>
+               </section>
+               
+                </div>
+            
+
+            <div class="form-three form-step">
+              <div class="bg-svg"><i class="fa-regular fa-address-card fa-3x"></i></div>
+              <h3>Contact</h3>
+              <p>Enter Your Contact Information</p>
+              <div>
+                <label>Phone</label>
+             <input type="text" placeholder="+91*********" id="Phone"  onkeypress="validatephone()">
+            <span id="phone-error"></span></div>
+            <div>
+            <label>Email</label>
+             <input type="text" placeholder="abc@gmail.com" id="email" onkeyup="validateemail()">
+            <span id="Email-error"></span></div> 
+                 
+            <div>
+              <label>Address</label>
+              <div>
+           <input type="text" placeholder="Street Address" id="ads"  onkeyup="validateads()">
+         <input type="text" placeholder="Near By" id="adss" onkeyup="validateads()">
+         <span id="address-error"></span>
+           </div>
+          </div>
+      
+        <div>
+          <label>City</label>
+       <input type="text" placeholder="City" id="city"  onkeyup="validatecity()">
+      <span id="city-error"></span></div>
+    
+      <div>
+        <label>State</label>
+<select id="state" name="country-state" onclick="validatestate()">
+  <option value=" ">Select state</option>
+  <option value="AN">Andaman and Nicobar Islands</option>
+  <option value="AP">Andhra Pradesh</option>
+  <option value="AR">Arunachal Pradesh</option>
+  <option value="AS">Assam</option>
+  <option value="BR">Bihar</option>
+  <option value="CH">Chandigarh</option>
+  <option value="CT">Chhattisgarh</option>
+  <option value="DN">Dadra and Nagar Haveli</option>
+  <option value="DD">Daman and Diu</option>
+  <option value="DL">Delhi</option>
+  <option value="GA">Goa</option>
+  <option value="GJ">Gujarat</option>
+  <option value="HR">Haryana</option>
+  <option value="HP">Himachal Pradesh</option>
+  <option value="JK">Jammu and Kashmir</option>
+  <option value="JH">Jharkhand</option>
+  <option value="KA">Karnataka</option>
+  <option value="KL">Kerala</option>
+  <option value="LA">Ladakh</option>
+  <option value="LD">Lakshadweep</option>
+  <option value="MP">Madhya Pradesh</option>
+  <option value="MH">Maharashtra</option>
+  <option value="MN">Manipur</option>
+  <option value="ML">Meghalaya</option>
+  <option value="MZ">Mizoram</option>
+  <option value="NL">Nagaland</option>
+  <option value="OR">Odisha</option>
+  <option value="PY">Puducherry</option>
+  <option value="PB">Punjab</option>
+  <option value="RJ">Rajasthan</option>
+  <option value="SK">Sikkim</option>
+  <option value="TN">Tamil Nadu</option>
+  <option value="TG">Telangana</option>
+  <option value="TR">Tripura</option>
+  <option value="UP">Uttar Pradesh</option>
+  <option value="UT">Uttarakhand</option>
+  <option value="WB">West Bengal</option>
+</select>
+<span id="state-error"></span></div>
+    <div>
+      <label>Zip Code</label>
+      <input type="text" placeholder="Postal/ZIP code" minlength="0" maxlength="6" id="code" onkeyup="validatecode()">
+    <span id="Code-error"></span></div>
+      </div>
+      
+     <div class="btn-grouping">
+        <button type="button" class="btn btn-prev" disabled>Back</button>
+        <button type="button" class="btn btn-next">Next</button>
+        <button type="button" class=" btn btn-submit" onclick=" validateForm()">submit</button>
+      </div>
+      
+      <span class="error-msg"></span>
+        </form> 
+      <div class="right-div">
+        <div class="popup" id="popup">
+         <img src="../stylesheet/icons8-tick.gif" src="image" />
+           <h2>Thank You</h2><img src="../stylesheet/smile.gif" src="smile" style="margin: 5px;" /><br>
+           <span id="namedisplay"></span>
+          <p>Your details has been successfully submitted. Thanks!</p>
+          <button type="button" onclick="closepopup()">Ok</button>
+        </div>
+          <span id="namedisplay"></span>
+        </div> </div>
+      </div>
+    </div>
+  </div>
+  <script src="../script/script.js"></script>
+</body>
+</html>
